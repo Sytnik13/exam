@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
 </head>
 <body>
@@ -38,23 +39,21 @@
             </div>
         </div>
     </div>
-    <div class="start-form">
-        <div class="form">
-            <table>
-                <tr><td><h3>GET STARTED</h3></td></tr>
-                <tr><td><select name="select" id="select">
-                    <option value="1">Select your course</option>
-                </select></td></tr>
-                <tr><td><input type="text" name="First Name" placeholder="First Name"></td></tr>
-                <tr><td><input type="text" name="Last Name" placeholder="Last Name"></td></tr>
-                <tr><td><input type="tel" name="Phone" placeholder="Phone"></td></tr>
-                <tr><td class="adress"><input type="text" name="Adress" placeholder="Adress"></td></tr>
-                <tr><td><input type="text" name="Zip" placeholder="Zip"></td></tr>
-                <tr><td><input type="email" name="Email" placeholder="Email"></td></tr>
-                <tr><td class="submit"><input type="submit" name="submit" value="Submit"></td></tr>
-            </table>
+    <form>
+        <div class="start-form">
+            <h3>GET STARTED</h3>
+            <select name="select" id="select">
+                <option value="1">Select your course</option>
+            </select>
+            <input type="text" name="First Name" placeholder="First Name">
+            <input type="text" name="Last Name" placeholder="Last Name">
+            <input type="tel" name="Phone" placeholder="Phone">
+            <textarea class="adress" name="Adress" placeholder="Adress"></textarea>
+            <input type="text" name="Zip" placeholder="Zip">
+            <input type="email" name="Email" placeholder="Email">
+            <input class="submit" type="submit" name="submit" value="Submit">
         </div>
-    </div>
+    </form>
     <div class="info">
         <div class="wrapper">
             <div class="text">
@@ -112,8 +111,8 @@
         <div class="header">
             <h6>What Students Says About Our University</h6>
             <div class="arrows">
-                <div class="arrow first"><a href="#"><</a></div>
-                <div class="arrow"><a href="#">></a></div>
+                <div class="arrow first"><a href="#"><i class="fa fa-chevron-left left-arrow"></i></a></div>
+                <div class="arrow"><a href="#"><i class="fa fa-chevron-right right-arrow"></i></a></div>
             </div>
         </div>
         <div class="text">
@@ -127,7 +126,7 @@
 <section class="getstart">
     <div class="wrapper">
          <div class="button">
-             <p>Click Here Now to Get Started<a href="#">></a></p>
+             <p>Click Here Now to Get Started<a href="#"><i class="fa fa-chevron-right btn-arrow"></i></a></p>
 
          </div>
          <div class="img">
@@ -156,53 +155,5 @@
         <div style="clear: both;"></div>
     </div>
 </footer>
-
-<!--<div class="top-content">
-    <div class="block-text">
-        <h1>WELCOME</h1>
-        <p>College students can publish their couse notes, study together, build their academic reputations....</p>
-    </div>
-    <div class="block-input">
-        <!--<p>GET STARTED</p>
-        <table>
-            <tr><td><h3>GET STARTED</h3></td></tr>
-            <tr><td><select name="select" id="select">
-                <option value="1">Select your course</option>
-            </select></td></tr>
-            <tr><td><input type="text" name="First Name" placeholder="First Name"></td></tr>
-            <tr><td><input type="text" name="Last Name" placeholder="Last Name"></td></tr>
-            <tr><td><input type="tel" name="Phone" placeholder="Phone"></td></tr>
-            <tr><td class="adress"><input type="text" name="Adress" placeholder="Adress"></td></tr>
-            <tr><td><input type="text" name="Zip" placeholder="Zip"></td></tr>
-            <tr><td><input type="email" name="Email" placeholder="Email"></td></tr>
-            <tr><td class="submit"><input type="submit" name="submit" value="Submit"></td></tr>
-        </table>
-    </div>
-    <div class="block-text2">
-        <div class="block-text2-header"><h2>ABC UNIVERSITY</h2></div>
-        <div class="block-text2-text1"><p>In 1865, Ezra Cornell founded an institution "where any person can find instruction in any study".From the beginning, all students were welcome, regardless of race, gender, ideology, or socioeconomic status.</p></div>
-        <div class="block-text2-text2"><p>Today, we invite you to join our talented and diverse students and accessible faculty who, together, form a living and learning community unmatched in its breadth of opportunities.</p></div>
-
-    </div>
-</div>
-<div class="content">
-    <div class="content-block1">
-        <p class="best">WHY WE ARE BEST</p>
-        <div class="content-block1-img"><img src="enviroment.png"></div>
-        <div class="content-block1-header"><h4>QUALITY ENVIROMENT</h4></div>
-        <div class="content-block1-text"><p>We guide our students to find their own academic paths by helping them to reason, analyze and understand in unprecedented ways. The undergraduate experience at Duke is characterized by a spirit of academic energy, exploration and challenge.</p></div>
-        <div class="content-block1-view"><a href="#">VIEW</a></div>
-    </div>
-    <div class="content-block2"></div>
-    <div class="content-block3"></div>
-</div>
-<div class="coment">
-    <div class="coment-list"></div>
-    <div class="coment-text"></div>
-    <div class="coment-img"></div>
-</div>
-<div class="footer">
-
-</div>-->
 </body>
 </html>
