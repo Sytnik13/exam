@@ -89,56 +89,93 @@ section.about .welcome .wrapper .text p {
     color: white;
 }
 
-section.about .start-form {
+section.about form {
     position: relative;
     top: -150px;
     height: 0;
     width: 300px;
     margin: 0 auto;
 }
-section.about .start-form .form {
+section.about form .start-form {
     position: absolute;
-    width: 300px;
-    height: 540px;
+
+    padding: 15px 20px 30px;
+    width: 250px;
     border-bottom: 5px solid #3498db;
 
 
-    background-color: white;
+    background-color: #fff;
 }
-section.about .start-form .form table {
-    margin: auto;
-    border-spacing: 10px;
+section.about form  {
+    margin: 0 auto;
 }
-section.about .start-form .form td {
-    text-align: center;
-}
-section.about .start-form .form h3 {
+section.about form h3 {
     font-size: 20px;
     font-weight: normal;
+    text-align: center;
 }
-section.about .start-form .form select {
-    width: 262px;
+section.about form select {
+    width: 250px;
     height: 39px;
+    padding-left: 10px;
+    font-size: 15pt;
 
+    color: #575757;
     border: 1px solid #e6e6e6;
     background-color: #f2f2f2;
 }
-section.about .start-form .form input {
-    width: 260px;
+section.about form input {
+    width: 232px;
     height: 36px;
+    font-size: 15pt;
+    padding-left: 15px;
+
+    margin-top: 10px;
 
     border: 1px solid #e6e6e6;
     background-color: #f2f2f2;
 }
-section.about .start-form .form .submit input {
+section.about form input::-webkit-input-placeholder {
+    color: #575757;
+}
+section.about form textarea::-webkit-input-placeholder {
+    color: #575757;
+    /*padding-left: 15px;*/
+    font-size: 15pt;
+    font-family: Helvetica;
+}
+section.about form input::-moz-placeholder {
+    color: #575757;
+}
+section.about form textarea::-moz-placeholder {
+    color: #575757;
+    padding-left: 15px;
+    font-size: 15pt;
+    font-family: Helvetica;
+}
+section.about form .submit {
     width: 200px;
     height: 50px;
-    margin-top: 16px;
+    margin: 10px 0 0 25px;
+
 
     background-color: #e74c3c;
     color: white;
     border: none;
 }
+section.about form textarea {
+    height: 75px;
+    width: 230px;
+
+    margin-top: 10px;
+
+    font-family: Helvetica;
+    font-size: 15pt;
+    padding-left: 15px;
+    border: 1px solid #e6e6e6;
+    background-color: #f2f2f2;
+}
+
 section.about .info {
     background-color: #f2f2f2;
     padding: 400px 27px 27px 27px;
@@ -239,17 +276,6 @@ section.comments .header .arrows {
 }
 section.comments .header .arrow {
     float: left;
-    /*width: 37px;*/
-    /*height: 37px;*/
-
-    /*color: #888888;*/
-    /*text-align: center;*/
-    /*line-height: 33px;*/
-    /*border: 1px solid #e5e5e5;*/
-    /*border-radius: 50%;*/
-    /*font-size: 28px;*/
-    /*text-transform: uppercase;*/
-    /*font-family: cursive;*/
 }
 section.comments .header .arrow a {
     display: block;
@@ -261,10 +287,16 @@ section.comments .header .arrow a {
     line-height: 33px;
     border: 1px solid #e5e5e5;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 20px;
     text-transform: uppercase;
     font-family: cursive;
     text-decoration: none;
+}
+section.comments .header .arrow a .left-arrow {
+    margin: 9px 4px 0 0;
+}
+section.comments .header .arrow a .right-arrow {
+    margin: 9px 0 0 3px;
 }
 section.comments .header .arrow a:hover {
     background-color: #f2f2f2;
@@ -289,8 +321,6 @@ section.comments .text {
 }
 
 section.getstart {
-    /*position: relative;*/
-    /*top: -200px;*/
     text-align: center;
     margin: auto;
     background-color: #f2f2f2;
@@ -317,11 +347,14 @@ section.getstart .wrapper .button a {
     line-height: 30px;
     border: 2px solid white;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 20px;
     text-transform: uppercase;
     font-family: cursive;
     text-decoration: none;
 
+}
+section.getstart .wrapper .button a .btn-arrow {
+    margin: 7px 0 0 1px;
 }
 section.getstart .wrapper .button p {
     color: white;
@@ -340,7 +373,8 @@ section.getstart .wrapper .img img {
     position: absolute;
     margin-left: -30%;
 }
-@media (min-width:800px) and (max-width: 1000px) {
+
+@media (min-width:800px) and (max-width: 1059px) {
     section.best .wrapper .article .text {
         text-align: left;
         margin-left: 300px;
@@ -353,9 +387,11 @@ section.getstart .wrapper .img img {
 
     }
 
+
     section.best .wrapper .article .img img {
         float: left;
     }
+
 }
 @media (min-width:800px) {
     header.main {
@@ -395,13 +431,13 @@ section.getstart .wrapper .img img {
         font-size: 25px !important;
         line-height: 30px !important;
     }
-    section.about .start-form {
+    section.about form  {
         float: right;
         top: -320px;
-        margin-right: 20px;
+        margin-right: 50px;
     }
     section.about .info {
-        padding: 1px 390px 22px 22px;
+        padding: 1px 390px 40px 22px;
     }
     section.about .info .wrapper .text {
         text-align: left;
@@ -417,20 +453,6 @@ section.getstart .wrapper .img img {
     section.best {
         padding: 20px 20px 25px 20px;
     }
-    /*section.best .wrapper .article .text {*/
-        /*text-align: left;*/
-        /*margin-left: 300px;*/
-        /*width: 435px;*/
-        /*height: 115px;*/
-    /*}*/
-    /*section.best .wrapper .article .href a {*/
-        /*margin-left: 320px;*/
-
-    /*}*/
-    /*section.best .wrapper .article .img img {*/
-        /*float: left;*/
-    /*}*/
-
     section.comments {
         padding: 0 10px 28px 10px;
     }
@@ -462,8 +484,6 @@ section.getstart .wrapper .img img {
         padding: 16px 33px;
         text-align: left;
         width: 470px;
-        /*height: 60px;*/
-
     }
     section.getstart .wrapper .button a {
         margin-left: 25px;
@@ -513,7 +533,7 @@ section.getstart .wrapper .img img {
         text-align: left;
     }
 }
-@media (min-width:1000px) {
+@media (min-width:1060px) {
     .wrapper {
         width: 1000px;
         margin: auto;
@@ -522,14 +542,14 @@ section.getstart .wrapper .img img {
         width: 1000px;
         margin: auto;
     }
-    section.about .start-form {
+    section.about form {
         width: 1000px;
         margin: 0 auto;
         height: 0;
         float: none;
 
     }
-    section.about .start-form .form {
+    section.about form .start-form   {
         right: 0px;
     }
     section.about .info {
@@ -560,3 +580,17 @@ section.getstart .wrapper .img img {
         height: 20px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
